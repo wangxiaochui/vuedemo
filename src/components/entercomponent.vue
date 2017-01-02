@@ -24,6 +24,7 @@ export default {
   },
   created() {
     //组件创建完成后执行
+    console.log(this.$haha);
     this.fetchData()
   },
   watch: {
@@ -37,6 +38,7 @@ export default {
          this.$http.get('http://slim_vue.com/test').then(({data}) => {
             this.list = JSON.parse(data);
             //this.list_head = 'sss';
+	    
             this.$parent.loading = false
          }
 

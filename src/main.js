@@ -98,9 +98,10 @@ router.beforeEach((to, from , next)=>{
     next()
 });
 
-
+var haha = 'test';
 const app = new Vue({
     router: router,
     store,
+	haha,
     render: h => h(App)
 }).$mount('#app')
